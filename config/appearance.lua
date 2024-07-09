@@ -18,7 +18,7 @@ return {
    cursor_blink_rate = 650,
 
    -- color scheme
-   colors = colors,
+   color_scheme = "Catppuccin Mocha",
 
    -- background
    background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
