@@ -9,7 +9,7 @@ if platform.is_mac then
    mod.SUPER = 'SUPER'
    mod.SUPER_REV = 'SUPER|CTRL'
 elseif platform.is_win or platform.is_linux then
-   mod.SUPER = 'ALT' -- to not conflict with Windows key shortcuts
+   mod.SUPER = 'CTRL' -- to not conflict with Windows key shortcuts
    mod.SUPER_REV = 'ALT|CTRL'
 end
 
@@ -54,8 +54,8 @@ local keys = {
    { key = 'Backspace',  mods = mod.SUPER,     action = act.SendString '\x15' },
 
    -- copy/paste --
-   { key = 'c',          mods = mod.SUPER,  action = act.CopyTo('Clipboard') },
-   { key = 'v',          mods = mod.SUPER,  action = act.PasteFrom('Clipboard') },
+   { key = 'c',          mods = mod.SUPER,     action = act.CopyTo('Clipboard') },
+   { key = 'v',          mods = mod.SUPER,     action = act.PasteFrom('Clipboard') },
 
    -- tabs --
    -- tabs: spawn+close
